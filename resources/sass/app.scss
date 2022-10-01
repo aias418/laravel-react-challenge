@@ -60,11 +60,37 @@
     height: 100%;
 }
 
+// custom css for Reservation Dashboard
 .dashboard {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    // font-size: 20px;
+    // font-weight: bold;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: center;
+    // height: 100%;
+    // width: 100%;
+    padding-top: 25px; 
+    .filter-section {
+        width: 100%;
+        label {
+            display: block;
+        }
+        button {
+            float: right;
+            margin-left: 8px;
+        }
+    }
+    .ant-table-cell-ellipsis .ant-table-column-title {
+        white-space: normal;
+    }
+}
+
+// hide scroll bar of table
+.ant-table-body::-webkit-scrollbar {
+    display: none;
+}
+.ant-table-body::-webkit-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

@@ -1,5 +1,5 @@
 const constants = {
-  HOST_URL: 'https://laravel-react-boilerplate.herokuapp.com/api',
+  HOST_URL: `${process.env.MIX_REACT_APP_API_URL}/api/`,
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',

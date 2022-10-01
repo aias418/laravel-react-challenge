@@ -13,7 +13,8 @@ export function AppRoutes({isAuthenticated}) {
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <PublicRoute path="/" isAuthenticated={isAuthenticated} exact>
-            <LoginPage/>
+            {/* <LoginPage/> */}
+            <ProtectedRoutes/>
           </PublicRoute>
           <PublicRoute path="/login" isAuthenticated={isAuthenticated} exact>
             <LoginPage/>

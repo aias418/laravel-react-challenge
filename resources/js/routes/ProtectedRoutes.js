@@ -32,7 +32,7 @@ function ProtectedRoutes() {
           />
         </div>
       </Header>
-      <Content style={{padding: '0 50px'}}>
+      <Content style={{padding: '0 20px'}}>
         <Switch>
           {routes.map(({component: Component, path, exact}, index) => (
             <Route path={`/${path}`} key={index} exact={exact}>

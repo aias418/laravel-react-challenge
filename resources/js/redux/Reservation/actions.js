@@ -1,0 +1,6 @@
+const actions = {
+  GET_RESERVATIONS: 'GET_RESERVATIONS',
+  GET_RESERVATIONS_SUCCESS: 'GET_RESERVATIONS_SUCCESS',
+}
+
+export default actions;

@@ -3,6 +3,10 @@
         "browser": true,
         "es6": true
     },
+    "extends": [
+      "standard",
+      "plugin:react/recommended",
+    ],
     "parserOptions": {
         "parser": "@babel/eslint-parser",
         "ecmaVersion": 11,
@@ -17,10 +21,10 @@
             2,
             { "SwitchCase": 1 }
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
+        // "linebreak-style": [
+        //     "error",
+        //     "unix"
+        // ],
         "quotes": [
             "error",
             "single"
@@ -30,13 +34,75 @@
             "as-needed"
         ],
         "lines-between-class-members": ["error", "always"] ,
-        "comma-dangle": [
-            2,
-            "always-multiline"
-        ],
+        "comma-dangle": "off",
         "no-confusing-arrow": 1,
-        "no-console": "warn",
         "no-use-before-define": 1,
         "prefer-template": 2
-    }
+    },
 }
+// {
+//     "env": {
+//       "browser": true,
+//       "es2020": true,
+//       "node": true,
+//       "jest": true
+//     },
+//     "extends": [
+//       "standard",
+//       "plugin:react/recommended",
+//       "plugin:@typescript-eslint/recommended",
+//       "prettier"
+//     ],
+//     "parser": "@typescript-eslint/parser",
+//     "parserOptions": {
+//       "ecmaFeatures": {
+//         "jsx": true
+//       },
+//       "ecmaVersion": 11,
+//       "sourceType": "module"
+//     },
+//     "plugins": ["react", "prettier", "@typescript-eslint"],
+//     "rules": {
+//       "space-before-function-paren": "off",
+//       "react/prop-types": "off",
+//       "import/extensions": [
+//         "error",
+//         "ignorePackages",
+//         {
+//           "ts": "never",
+//           "tsx": "never"
+//         }
+//       ],
+//       "@typescript-eslint/ban-types": "off",
+//       "@typescript-eslint/no-explicit-any": "off",
+//       "@typescript-eslint/no-non-null-assertion": "off",
+//       "@typescript-eslint/no-unused-vars": [
+//         1,
+//         {
+//           "argsIgnorePattern": "^_"
+//         }
+//       ],
+//       "camelcase": "off",
+//       "comma-dangle": "off",
+//       "no-unused-vars": "off",
+//       "no-use-before-define": "off",
+//       "semi": 0,
+//       "quotes": [
+//         1,
+//         "single",
+//         {
+//           "avoidEscape": true,
+//           "allowTemplateLiterals": true
+//         }
+//       ]
+//     },
+//     "settings": {
+//       "import/resolver": {
+//         "typescript": {}
+//       },
+//       "react": {
+//         "version": "detect"
+//       }
+//     }
+//   }
+  
